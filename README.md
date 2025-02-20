@@ -1,6 +1,6 @@
 Project: Car Dealer
 
-### [Vercel Deploy]()
+### [Vercel Deploy](https://car-dealer-app-kappa.vercel.app/)
 
 ### The tech stack is:
 
@@ -28,4 +28,4 @@ You can start editing the page by modifying `pages/index.tsx`. The page auto-upd
 
 ### Author
 
-- [Viktor Troyan]
+- [Viktor Troyan](https://github.com/FastikDev)
