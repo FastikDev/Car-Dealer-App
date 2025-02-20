@@ -1,4 +1,5 @@
-import dynamic from 'next/dynamic';
+"use client";
+
 import React, { useState } from 'react';
 import { useRouter } from 'next/router';
 import { years } from '../../utils';
@@ -112,4 +113,4 @@ const Modal: React.FC<ModalProps> = ({ onModalClick, cars }) => {
   );
 };
 
-export default dynamic(() => Promise.resolve(Modal), { ssr: false });
+export default Modal;
