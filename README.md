@@ -11,7 +11,7 @@ The main breakpoint is **1024px** (transition between desktop and tablet/mobile 
 - **> 1024px**: Desktop version.
 - **≤ 1024px**: Tablet/Mobile version.
 
-Responsiveness is implemented using CSS media queries along with Flexbox and Grid layouts.
+Responsiveness is implemented using Taiwind CSS media queries along with Flexbox and Grid layouts.
 
 ### The tech stack is:
 
