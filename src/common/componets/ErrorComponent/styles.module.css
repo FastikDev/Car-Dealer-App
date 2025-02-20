@@ -1,0 +1,22 @@
+.main {
+  @apply flex flex-col justify-center items-center h-[100vh];
+}
+
+.content {
+  @apply flex flex-col items-center;
+  @apply w-[343px] h-[118px];
+}
+
+.title {
+  @apply text-[17px] leading-[22px] font-semibold;
+  @apply mt-3;
+}
+
+.description {
+  @apply text-textGray;
+  @apply my-2;
+}
+
+.link {
+  @apply text-primary font-semibold;
+}

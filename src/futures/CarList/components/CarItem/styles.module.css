@@ -1,0 +1,32 @@
+.card {
+  @apply bg-white rounded-[16px] shadow-cardShadow;
+  @apply flex flex-col items-center justify-center;
+  @apply h-[116px] w-[350px] sm:w-[252px];
+}
+
+.title {
+  @apply text-[20px] leading-[20px] font-bold;
+  @apply max-w-[192px] overflow-hidden text-ellipsis whitespace-nowrap;
+}
+
+.title:hover {
+  @apply cursor-pointer;
+}
+
+.title[title]:hover {
+  @apply underline;
+}
+
+.text {
+  @apply mt-4 leading-[20px];
+}
+
+@media (min-width: 1024px) {
+  .title {
+    @apply text-[24px];
+  }
+  
+  .text {
+    @apply text-[20px];
+  }
+}

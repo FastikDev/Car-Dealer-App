@@ -1,0 +1,17 @@
+.skeleton {
+  @apply flex flex-col items-center;
+  @apply mt-[8px];
+}
+
+.list {
+  @apply mt-4 mb-[30px];
+  @apply grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5;
+  @apply gap-3;
+}
+
+.card {
+  @apply bg-white rounded-[16px] h-[116px];
+  @apply flex flex-col items-center justify-center;
+  @apply shadow-cardShadow w-[350px] sm:w-[252px];
+  @apply animate-fliker;
+}

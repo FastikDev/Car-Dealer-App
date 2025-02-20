@@ -1,0 +1,101 @@
+.main {
+  @apply flex flex-col items-center;
+  @apply mt-0;
+}
+
+.container {
+  @apply flex;
+}
+
+.wrapper {
+  @apply relative flex flex-row items-center;
+}
+
+.sort_list {
+  @apply hidden;
+}
+
+.sort_open {
+  @apply z-10 bg-secondary w-[100px] absolute top-[33px];
+  @apply pt-4 flex flex-col rounded-[8px];
+}
+
+.sort_item {
+  @apply mb-1 ml-1 cursor-pointer font-semibold;
+  @apply w-full top-[33px] flex flex-col items-center;
+  @apply flex flex-row gap-1;
+}
+
+.sort {
+  @apply z-20 w-[40px] h-[40px] text-[32px] text-white;
+  @apply bg-bgGreen rounded-[8px] flex items-center justify-center gap-[10px];
+}
+
+.sort_result {
+  @apply w-[140px];
+}
+
+.sort_text {
+  @apply hidden;
+}
+
+.sort_text_result {
+  @apply block
+}
+
+.icon {
+  @apply text-textColor;
+}
+.select {
+  @apply w-[140px] h-[40px] bg-bgGreen rounded-[8px];
+  @apply text-white text-[32px];
+  @apply flex justify-center items-center;
+  @apply mr-2;
+}
+
+.list {
+  @apply mt-4 mb-[30px];
+  @apply grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3;
+}
+
+.link {
+  @apply mb-[20px] text-[16px] font-medium leading-[20px] underline;
+}
+
+.link:hover {
+  @apply no-underline cursor-pointer;
+}
+
+@media (min-width: 1024px) {
+  .main {
+    @apply relative;
+  }
+  
+  .container {
+    @apply absolute left-[20px] top-[-20px];
+  }
+  
+  .sort {
+    @apply w-[140px];
+  }
+
+  .sort_text {
+    @apply block;
+  }
+
+  .sort_list {
+    @apply w-full;
+  }
+
+  .sort_open {
+    @apply rounded-b-[8px];
+  }
+
+  .sort_item {
+    @apply text-[20px];
+  }
+  
+  .list {
+    @apply mt-10;
+  }
+}

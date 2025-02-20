@@ -1,0 +1,101 @@
+.header {
+  @apply relative pt-[44px] pb-6;
+  @apply flex flex-col justify-center;
+}
+
+.offline {
+  @apply bg-bgRed;
+}
+
+.network {
+  @apply flex flex-col items-start gap-0.5;
+  @apply ml-[20px] mt-2;
+  @apply text-white;
+}
+
+.network_title {
+  @apply text-[24px] font-extrabold;
+}
+
+.network_description {
+  @apply text-[14px];
+}
+
+.back_btn {
+  @apply text-textColor absolute top-[44px] left-[23px];
+}
+
+.icon {
+  @apply absolute text-[24px] top-1/2 transform -translate-y-1/2;
+  @apply text-customGray;
+}
+
+.icon_search {
+  @apply left-4;
+}
+
+.focused {
+  @apply text-textColor;
+}
+
+.icon_cancel {
+  @apply right-4 block text-red-500 cursor-pointer;
+}
+
+.active {
+  @apply hidden;
+}
+
+.title_container {
+  @apply flex justify-center items-baseline;
+}
+
+.car_title {
+  @apply flex justify-center items-baseline;
+  @apply text-[32px] font-bold;
+}
+
+.car_year {
+  @apply font-light text-[14px] ml-1.5;
+}
+
+.title_text {
+  @apply text-4xl leading-[20px] font-bold;
+}
+
+.title_icon {
+  @apply ml-1.5 text-[25px] text-textColor;
+}
+
+.container {
+  @apply w-full px-4 py-[6px] mt-2.5;
+}
+
+.input_container {
+  @apply relative w-full;
+}
+
+.input {
+  @apply w-full h-[40px] bg-lightGray rounded-[16px];
+  @apply pl-[44px] pr-[44px] text-gray-900 focus:border-textColor;
+  @apply outline-none placeholder:text-gray-400;
+}
+
+.input:focus {
+  @apply border-2 border-textColor;
+}
+
+@media (min-width: 1024px) {
+  .title_container {
+    @apply justify-start;
+  }
+
+  .title_text {
+    @apply ml-[20px];
+  }
+
+  .network_title {
+    @apply text-[36px];
+  }
+
+}

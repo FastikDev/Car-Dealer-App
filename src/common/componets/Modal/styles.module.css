@@ -1,0 +1,97 @@
+.overlay {
+  @apply fixed top-0 left-0 w-[100vw] h-[100vh] z-30;
+  background-color: rgba(5, 5, 16, 0.16);
+}
+
+.modal {
+  @apply fixed flex justify-center items-center;
+}
+
+.content {
+  @apply relative rounded-tl-[16px] rounded-tr-[16px] mt-auto w-[100%] h-[400px] bg-white flex flex-col;
+}
+
+.selected {
+  @apply flex flex-col items-center justify-start mt-16 h-[100%];
+}
+
+.close_desctope {
+  padding: auto;
+  @apply hidden;
+}
+
+.close_mobile {
+  @apply bg-icon h-[4px] w-[60px] rounded-[20%] absolute top-[12px] left-[45%];
+}
+
+.car_input {
+  @apply bg-customGray h-[40px] w-[210px] p-2;
+}
+
+.input_error {
+  @apply bg-errorBg;
+}
+
+.validation_text {
+  @apply text-errorBorder mt-[3px];
+}
+
+.year_list {
+  @apply hidden;
+}
+
+.btn_box {
+  @apply flex items-start gap-[20px] mt-[8px];
+}
+
+.year_btn {
+  @apply bg-success p-2 flex justify-center items-center w-[80px] h-[40px];
+}
+
+.year {
+  @apply text-textBlue;
+}
+
+.year_value {
+  @apply ml-1;
+}
+
+.year_wrap {
+  @apply relative;
+}
+
+.next {
+  @apply w-[80px] h-[40px] border-none flex justify-center items-center bg-textBlue text-white;
+}
+
+.next:disabled {
+  opacity: 50%;
+}
+
+.icon {
+  @apply ml-2.5 text-textColor;
+}
+
+.active {
+  @apply absolute flex flex-col items-center w-full h-[140px] bg-grayLight p-2;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+@media (min-width: 1024px) {
+  .content {
+    @apply m-auto w-[373px] h-[192px] rounded-[16px];
+  }
+
+  .close_desctope {
+    @apply block absolute right-[24px] top-[24px] w-[24px] h-[24px] rounded-[50%] border-none text-textGray bg-lightGray;
+  }
+
+  .close_mobile {
+    @apply hidden;
+  }
+
+  .selected {
+    @apply justify-center m-0;
+  }
+}
