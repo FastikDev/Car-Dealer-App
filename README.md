@@ -2,6 +2,17 @@ Project: Car Dealer
 
 ### [Vercel Deploy](https://car-dealer-app-kappa.vercel.app/)
 
+## Responsiveness
+
+The website is fully responsive and optimized for various devices.  
+The main breakpoint is **1024px** (transition between desktop and tablet/mobile versions).
+
+### Key Breakpoints:
+- **> 1024px**: Desktop version.
+- **≤ 1024px**: Tablet/Mobile version.
+
+Responsiveness is implemented using Taiwind CSS media queries along with Flexbox and Grid layouts.
+
 ### The tech stack is:
 
 - [HTML5](https://developer.mozilla.org/en-US/docs/Web/HTML)
