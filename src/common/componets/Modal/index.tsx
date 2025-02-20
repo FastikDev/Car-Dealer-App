@@ -101,7 +101,7 @@ const Modal: React.FC<ModalProps> = ({ onModalClick, cars }) => {
             </div>
             <button
               className={styles.next}
-              disabled={!selectedYear || value === ''}
+              disabled={!selectedYear || value === '' || !validation }
               onClick={handleNextClick}
             >
               Next
